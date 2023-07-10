@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edon Fetaji</title>
     <link rel="stylesheet" href="stylish.css">
-    <script src="skripta.js"></script>
-    <link rel="shortcut icon" type="image/jpeg" href="img/fav.jpeg" style="border-radius: 50px">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
 </head>
 <body>
@@ -156,21 +155,24 @@
             <div class="title">
                 <h2>contact</h2>
             </div>
+            <input type="text" name="_honey" style="display: none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://edonfetaji.github.io/sucess.html">
             <div class="half">
                 <div class="item">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" required>
+                    <label for="name" >Name</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div class="item">
                     <label for="email">Email</label>
-                    <input type="text" id="email" required>
+                    <input type="text" name="email" id="email" required>
                 </div>
             </div>
             <div class="full">
                 <label for="message">Message</label>
-                <textarea id="message" rows="10" required></textarea>
+                <textarea id="message" rows="10" name="message" required></textarea>
             </div>
-            <button type="submit" class="button" value="Send">submit</button>
+            <button type="submit" class="button">submit</button>
 
         </form>
     </section>

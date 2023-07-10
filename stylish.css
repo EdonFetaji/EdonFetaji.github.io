@@ -669,6 +669,9 @@ footer > div > div:nth-child(1) > p {
         font-size: 0.6em;
         padding: 10px;
     }
+    footer {
+        background: #f7ffff ;
+    }
 }
 
 @media (max-width: 400px) {
