@@ -170,7 +170,7 @@ header {
 }
 
 #main > div:nth-child(5) {
-    background: linear-gradient(#fff3e4,#e0e6e7);
+    background: linear-gradient(#fff3e4, #e0e6e7);
 }
 
 #work {
@@ -210,7 +210,7 @@ header {
     display: grid;
     place-items: center;
     font-family: Volkhov, sans-serif;
-    min-height: 400px;
+    /*min-height: 400px;*/
     background: linear-gradient(#fff3e4, #cff3f9);
 }
 
@@ -677,6 +677,18 @@ footer > div > div:nth-child(1) > p {
         display: none;
     }
 
+    #aboutMe .card1 {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    #aboutMe > div > div {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        padding: 20px;
+    }
+
     #skills > div {
         grid-template-columns: 1fr;
     }
@@ -689,10 +701,10 @@ footer > div > div:nth-child(1) > p {
         display: none;
     }
 
-    #aboutMe > div > div > a {
-        font-size: 0.75em;
-        padding: 1em;
+    #aboutMe > div > div > p {
+        display: inline-block;
     }
+
 }
 
 @media (max-width: 450px) {
@@ -702,11 +714,6 @@ footer > div > div:nth-child(1) > p {
 
     #aboutMe > div > div > p {
         font-size: 0.6em;
-    }
-
-    #aboutMe > div > div > a {
-        font-size: 0.6em;
-        padding: 10px;
     }
 
     footer {
@@ -719,7 +726,4 @@ footer > div > div:nth-child(1) > p {
         width: 100px;
     }
 
-    #aboutMe > div > div > a > span {
-        display: none;
-    }
 }
