@@ -156,10 +156,21 @@ header {
     color: rgb(4, 4, 38);
 }
 
-#main > div:nth-child(1) {
+.placeholder {
     background: #1f1b18;
+    /*background: #0d2a2e;*/
     min-height: 40px;
     background-size: cover;
+}
+
+#main > div:nth-child(8) {
+    background: linear-gradient(#d8ecef, #f7ffff);
+
+    /*color: ;*/
+}
+
+#main > div:nth-child(5) {
+    background: linear-gradient(#fff3e4,#e0e6e7);
 }
 
 #work {
@@ -221,7 +232,7 @@ header {
 }
 
 #skills {
-    padding: 40px 0 0 40px;
+    padding: 40px 0 40px 40px;
     font-family: rig, sans-serif;
     background: linear-gradient(#cff3f9, #fff3e4);
     color: #003e5a;
@@ -253,8 +264,10 @@ header {
 
 #hobbies {
     min-height: 600px;
-    animation: back 2s linear infinite alternate;
-    background: #fff3e4;
+    /*background: #fff3e4;*/
+    animation: animation 15s linear infinite alternate;
+    background: linear-gradient(to right, #cff3f9, #f9d4ce, #C9EDE7);
+    background-size: 400%;
     padding: 40px 40px 0 40px;
     font-family: rig, sans-serif;
 }
@@ -290,12 +303,34 @@ header {
 
 #contact {
     min-height: 500px;
-    background: linear-gradient(#fff3e4, #f7ffff);
+    /*background: linear-gradient(#fff3e4, #f7ffff);*/
+    animation: animation 15s linear infinite alternate;
+    background: linear-gradient(to right, #cff3f9, #f9d4ce, #C9EDE7);
+    background-size: 400%;
     color: black;
     display: grid;
     place-items: center;
     font-family: rig, sans-serif;
 }
+
+@keyframes animation {
+    0% {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: 100% 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
 
 form {
     background: rgba(27, 31, 34, 0.80);
@@ -593,6 +628,10 @@ footer > div > div:nth-child(1) > p {
     footer > div > ul > li > a {
         padding: 20px;
     }
+
+    #hobbies > div {
+        padding: 60px 0 0 0;
+    }
 }
 
 @media (max-width: 500px) {
@@ -658,7 +697,7 @@ footer > div > div:nth-child(1) > p {
 
 @media (max-width: 450px) {
     #hobbies > div > div {
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
 
     #aboutMe > div > div > p {
@@ -669,8 +708,9 @@ footer > div > div:nth-child(1) > p {
         font-size: 0.6em;
         padding: 10px;
     }
+
     footer {
-        background: #f7ffff ;
+        background: #f7ffff;
     }
 }
 
