@@ -97,7 +97,6 @@ header {
 }
 
 .quote-text {
-    /*font-size: 1.8em;*/
     font-size: clamp(0.2em, calc(1.2vw + 1.2vh), 5em);
     color: #1f1418;
 }
@@ -157,36 +156,10 @@ header {
     color: rgb(4, 4, 38);
 }
 
-#main > section:nth-child(2) {
-    /*background: #1f1418;*/
-    /*height: 1200px;*/
-    /*background: #fff3e4;*/
-    /*background: white;*/
-    /*background: #115f69;*/
-    /*background: #86BEC2; */
-    /*background: #203854;*/
-    /*background: #a5b0b2;*/
-    /*background: #403d36; !*best one so far*!*/
-    /*background: #b7b9ac;*/
-    /*background: #BBC4C2;!*best one so far*!*/
-    /*background: #7D7461;!*best one so far*!*/
-    /*background: #1f1b18;*/
-    /*color: #95978a;*/
-    /*background: linear-gradient(#cff3f9, #fff3e4);*/
-    /*background: #fff3e4;*/
-    /*background: linear-gradient(#403d36, #fff3e4);*/
-    /*min-height: 400px;*/
-    /*background: #1f4c65;*/
-
-}
-
-
 #main > div:nth-child(1) {
-    /*background: url("img/woodenb.jpg");*/
     background: #1f1b18;
     min-height: 40px;
     background-size: cover;
-    /*display: none;*/
 }
 
 #work {
@@ -194,8 +167,6 @@ header {
     color: #1f1418;
     font-family: rig, sans-serif;
     font-size: clamp(1.5em, calc(1.1vw + 1.1vh), 0.8em);
-    /*background: #cff3f9;*/
-    /*background: linear-gradient(#fff3e4, #cff3f9);*/
     background: #fff3e4;
 
 }
@@ -229,9 +200,6 @@ header {
     place-items: center;
     font-family: Volkhov, sans-serif;
     min-height: 400px;
-    /*min-width: 1000px;*/
-    /*background: #fff3e4;*/
-    /*background: #cff3f9;*/
     background: linear-gradient(#fff3e4, #cff3f9);
 }
 
@@ -262,13 +230,11 @@ header {
 #skills > div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /*max-width: 550px;*/
     min-height: 300px;
     font-size: 1.3em;
     gap: 2em;
     place-items: center;
     text-align: left;
-    /*padding-top: 2em;*/
     padding: 2em 1em;
 }
 
@@ -286,26 +252,20 @@ header {
 }
 
 #hobbies {
-    height: 600px;
+    min-height: 600px;
     animation: back 2s linear infinite alternate;
-    /*background: linear-gradient(#cff3f9, #fff3e4,#fff3e4);*/
     background: #fff3e4;
-    /*background: linear-gradient(to bottom, #cff3f9, #cef9d4,#f3f9ce,#f9d4ce);*/
     padding: 40px 40px 0 40px;
     font-family: rig, sans-serif;
-    /*display: inline-block;*/
 }
 
 #hobbies > div {
-    /*align-self: center;*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 60px;
     gap: 4em;
-    /*font-family: Volkhov, sans-serif;*/
     font-weight: lighter;
     margin: auto;
-    /*border: 1px solid black;*/
 }
 
 
@@ -319,8 +279,6 @@ header {
     grid-template-columns: 150px 1fr;
     gap: 1em;
     max-width: 500px;
-    /*border: 1px solid black;*/
-
     margin: auto auto;
 
 }
@@ -333,7 +291,6 @@ header {
 #contact {
     min-height: 500px;
     background: linear-gradient(#fff3e4, #f7ffff);
-    /*background: #fff3e4;*/
     color: black;
     display: grid;
     place-items: center;
@@ -343,9 +300,8 @@ header {
 form {
     background: rgba(27, 31, 34, 0.80);
     background: #1e2122;
-    /*width: 640px;*/
-    width: 40%;
-    margin: 35px auto 50px auto ;
+    width: 55%;
+    margin: 35px auto 50px auto;
     max-width: 97%;
     border-radius: 20px;
     padding: 55px 30px;
@@ -386,7 +342,6 @@ form .half .item input {
     border-radius: 4px;
     border: 1px solid white;
     outline: 0;
-    /*padding: 16px;*/
     width: 100%;
     height: 44px;
     background: transparent;
@@ -486,7 +441,7 @@ footer > div > div:nth-child(1) > p {
     transition-duration: .3s;
 }
 
-/* twitter*/
+/* facebook*/
 .containerTwo:hover {
     background-color: #00acee;
     transition-duration: .3s;
@@ -547,6 +502,13 @@ footer > div > div:nth-child(1) > p {
     }
 }
 
+@media (max-width: 1000px) {
+    #hobbies > div > div {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+
 @media (max-width: 850px) {
     .headerCard {
         display: none;
@@ -578,6 +540,14 @@ footer > div > div:nth-child(1) > p {
 
     form .half .item {
         width: 100%;
+    }
+
+    #hobbies > div > div {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #hobbies > div {
+        grid-template-columns: 1fr;
     }
 
     footer > div {
@@ -648,9 +618,7 @@ footer > div > div:nth-child(1) > p {
     footer > div > div:nth-child(1) > p {
         display: none;
     }
-}
 
-@media (max-width: 500px) {
     .navbar > ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -672,5 +640,43 @@ footer > div > div:nth-child(1) > p {
 
     #skills > div {
         grid-template-columns: 1fr;
+    }
+
+    #hobbies > div > div {
+        font-size: 0.8em;
+    }
+
+    #aboutMe > div > div > p:nth-child(1) {
+        display: none;
+    }
+
+    #aboutMe > div > div > a {
+        font-size: 0.75em;
+        padding: 1em;
+    }
+}
+
+@media (max-width: 450px) {
+    #hobbies > div > div {
+        font-size: 0.6em;
+    }
+
+    #aboutMe > div > div > p {
+        font-size: 0.6em;
+    }
+
+    #aboutMe > div > div > a {
+        font-size: 0.6em;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    #contact > form > button {
+        width: 100px;
+    }
+
+    #aboutMe > div > div > a > span {
+        display: none;
     }
 }
